@@ -1,0 +1,3 @@
+REPLACE INTO cscart_payment_processors (`processor`,`processor_script`,`processor_template`,`admin_template`,`callback`,`type`) VALUES ('Heartland','heartland.php', 'views/orders/components/payments/cc_outside.tpl','heartland.tpl', 'Y', 'P');
+REPLACE INTO cscart_language_values (`lang_code`,`name`,`value`) VALUES ('EN','publickey','Public API Key');
+REPLACE INTO cscart_language_values (`lang_code`,`name`,`value`) VALUES ('EN','secretkey','Secret API Key');
