@@ -17,17 +17,17 @@ if (defined('PAYMENT_NOTIFICATION')) {
 
         $chargeService = new HpsCreditService($config);
         $address = new HpsAddress();
-        $address->address = $order_info['address'];
-        $address->city = $order_info['city'];
-        $address->state = $order_info['state'];
-        $address->zip = preg_replace('/[^0-9]/', '', $order_info['zip']);
-        $address->country = $order_info['country'];
+        $address->address = $order_info['b_address'];
+        $address->city = $order_info['b_city'];
+        $address->state = $order_info['b_state'];
+        $address->zip = preg_replace('/[^0-9]/', '', $order_info['b_zipcode']);
+        $address->country = $order_info['b_country'];
 
         $validCardHolder = new HpsCardHolder();
         $validCardHolder->firstName = $order_info['b_firstname'];
         $validCardHolder->lastName = $order_info['b_lastname'];
         $validCardHolder->address = $address;
-        $validCardHolder->phoneNumber = preg_replace('/[^0-9]/', '', $order_info['phone']);
+        $validCardHolder->phoneNumber = preg_replace('/[^0-9]/', '', $order_info['b_phone']);
 
         $suToken = new HpsTokenData();
         $suToken->tokenValue = $_REQUEST['securesubmit_token'];
