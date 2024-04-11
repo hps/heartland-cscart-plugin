@@ -140,7 +140,7 @@ div.credit-card-submit.disable-button{
 
     <script type="text/javascript">
             GlobalPayments.configure({
-                "publicApiKey": "pkapi_cert_tTMCQaF3XoBGX9Afux"
+                "publicApiKey": "{$key}"
             });
 
             // Create Form
