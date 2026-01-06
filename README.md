@@ -1,4 +1,5 @@
-# Heartland SecureSubmit Plugin for CS Cart 4.3.4+
+# **This repository is no longer maintained.**
+# Global Payments SecureSubmit Plugin for CS Cart 4.3.4+
 
 This plugin makes it easy to start taking payments with CS Cart 4.3.4+
 
@@ -6,7 +7,7 @@ This plugin makes it easy to start taking payments with CS Cart 4.3.4+
 
 Copy the files into your CS Cart project
 Run the SQL included in the install_heartland.sql
-Add Heartland as a payment method
+Add Global Payments as a payment method
 Plug in your test credentials.
 Save and test.
 
